@@ -112,6 +112,12 @@ export default {
               icon: 'button',
               component: './General/Button',
             },
+            {
+              path: '/general/icon',
+              name: 'icon',
+              icon: 'icon',
+              component: './General/Icon',
+            },
           ]
         },
         {
