@@ -111,12 +111,75 @@ export default {
               name: 'button',
               icon: 'button',
               component: './General/Button',
-            },
-            {
+              routes:[
+                {
+                  path: '/general/button',
+                  redirect: '/general/button/01',
+                },
+                {
+                  path: '/general/button/01',
+                  component: './General/Button/Button01',
+                },
+                {
+                  path: '/general/button/02',
+                  component: './General/Button/Button02',
+                },
+                {
+                  path: '/general/button/03',
+                  component: './General/Button/Button03',
+                },
+                {
+                  path: '/general/button/04',
+                  component: './General/Button/Button04',
+                },
+                {
+                  path: '/general/button/05',
+                  component: './General/Button/Button05',
+                },
+                {
+                  path: '/general/button/06',
+                  component: './General/Button/Button06',
+                },
+                {
+                  path: '/general/button/07',
+                  component: './General/Button/Button07',
+                },
+                {
+                  path: '/general/button/08',
+                  component: './General/Button/Button08',
+                },
+                {
+                  path: '/general/button/09',
+                  component: './General/Button/Button09',
+                }
+              ]
+            },{
               path: '/general/icon',
               name: 'icon',
               icon: 'icon',
               component: './General/Icon',
+              routes:[
+                {
+                  path: '/general/icon',
+                  redirect: '/general/icon/01',
+                },
+                {
+                  path: '/general/icon/01',
+                  component: './General/Icon/Index01',
+                },
+                {
+                  path: '/general/icon/02',
+                  component: './General/Icon/Index02',
+                },
+                {
+                  path: '/general/icon/03',
+                  component: './General/Icon/Index03',
+                },
+                {
+                  path: '/general/icon/04',
+                  component: './General/Icon/Index04',
+                },
+              ]
             },
           ]
         },
