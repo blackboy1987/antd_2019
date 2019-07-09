@@ -4,33 +4,44 @@ import {
 } from 'antd';
 import React, { Component } from 'react';
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
-import Index01 from './Index01';
-import Index02 from './Index02';
-import Index03 from './Index03';
-import Index04 from './Index04';
+import router from 'umi/router';
 
 const { TabPane } = Tabs;
 // eslint-disable-next-line react/prefer-stateless-function
 class Index extends Component {
+  state={
+    activeKey: '01',
+  };
+
+  componentDidMount(): void {
+    // @ts-ignore
+    const { location: { pathname = '' }, match: { path = '' } } = this.props;
+    this.setState({
+      activeKey: pathname.substring(path.length + 1),
+    });
+  }
+
+  callback=(key:string) => {
+    router.push(`/general/typography/${key}`);
+    this.setState({
+      activeKey: key,
+    });
+  };
+
   render() {
+    const { children } = this.props;
+    const { activeKey } = this.state;
     return (
       <PageHeaderWrapper>
         <Card bordered={false}>
-          <Tabs>
-            <TabPane tab="基本用法" key="1">
-              <Index01 />
-            </TabPane>
-            <TabPane tab="基本多色图标用法" key="2">
-              <Index02 />
-            </TabPane>
-            <TabPane tab="自定义图标" key="3">
-              <Index03 />
-            </TabPane>
-            <TabPane tab="使用 iconfont.cn" key="4">
-              <Index04 />
-            </TabPane>
-
+          <Tabs onChange={this.callback} activeKey={activeKey}>
+            <TabPane tab="基本" key="01" />
+            <TabPane tab="标题组件" key="02" />
+            <TabPane tab="文本组件" key="03" />
+            <TabPane tab="可交互" key="04" />
+            <TabPane tab="省略号" key="05" />
           </Tabs>
+          {children}
         </Card>
       </PageHeaderWrapper>
     );

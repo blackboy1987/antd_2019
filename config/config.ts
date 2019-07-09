@@ -153,7 +153,8 @@ export default {
                   component: './General/Button/Button09',
                 }
               ]
-            },{
+            },
+            {
               path: '/general/icon',
               name: 'icon',
               icon: 'icon',
@@ -178,6 +179,38 @@ export default {
                 {
                   path: '/general/icon/04',
                   component: './General/Icon/Index04',
+                },
+              ]
+            },
+            {
+              path: '/general/typography',
+              name: 'typography',
+              icon: 'typography',
+              component: './General/Typography',
+              routes:[
+                {
+                  path: '/general/typography',
+                  redirect: '/general/typography/01',
+                },
+                {
+                  path: '/general/typography/01',
+                  component: './General/Typography/Index01',
+                },
+                {
+                  path: '/general/typography/02',
+                  component: './General/Typography/Index02',
+                },
+                {
+                  path: '/general/typography/03',
+                  component: './General/Typography/Index03',
+                },
+                {
+                  path: '/general/typography/04',
+                  component: './General/Typography/Index04',
+                },
+                {
+                  path: '/general/typography/05',
+                  component: './General/Typography/Index05',
                 },
               ]
             },
