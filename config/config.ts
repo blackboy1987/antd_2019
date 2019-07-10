@@ -217,6 +217,151 @@ export default {
           ]
         },
         {
+          path: 'layout',
+          name: 'layout',
+          icon: 'layout',
+          routes:[
+            {
+              path: '/layout/grid',
+              name: 'grid',
+              icon: 'grid',
+              component: './Layout/Grid',
+              routes:[
+                {
+                  path: '/layout/grid',
+                  redirect: '/layout/grid/01',
+                },
+                {
+                  path: '/layout/grid/01',
+                  component: './Layout/Grid/Index01',
+                },
+                {
+                  path: '/layout/grid/02',
+                  component: './Layout/Grid/Index02',
+                },
+                {
+                  path: '/layout/grid/03',
+                  component: './Layout/Grid/Index03',
+                },
+                {
+                  path: '/layout/grid/04',
+                  component: './Layout/Grid/Index04',
+                },
+                {
+                  path: '/layout/grid/05',
+                  component: './Layout/Grid/Index05',
+                },
+                {
+                  path: '/layout/grid/06',
+                  component: './Layout/Grid/Index06',
+                },
+                {
+                  path: '/layout/grid/07',
+                  component: './Layout/Grid/Index07',
+                },
+                {
+                  path: '/layout/grid/08',
+                  component: './Layout/Grid/Index08',
+                },
+                {
+                  path: '/layout/grid/09',
+                  component: './Layout/Grid/Index09',
+                },
+                {
+                  path: '/layout/grid/10',
+                  component: './Layout/Grid/Index10',
+                }
+              ]
+            },
+            {
+              path: '/layout/layout',
+              name: 'layout',
+              icon: 'layout',
+              component: './Layout/Layout',
+              routes:[
+                {
+                  path: '/layout/layout',
+                  redirect: '/layout/layout/01',
+                },
+                {
+                  path: '/layout/layout/01',
+                  component: './Layout/Layout/Index01',
+                },
+                {
+                  path: '/layout/layout/02',
+                  component: './Layout/Layout/Index02',
+                },
+                {
+                  path: '/layout/layout/03',
+                  component: './Layout/Layout/Index03',
+                },
+                {
+                  path: '/layout/layout/04',
+                  component: './Layout/Layout/Index04',
+                },
+                {
+                  path: '/layout/layout/05',
+                  component: './Layout/Layout/Index05',
+                },
+                {
+                  path: '/layout/layout/06',
+                  component: './Layout/Layout/Index06',
+                },
+                {
+                  path: '/layout/layout/07',
+                  component: './Layout/Layout/Index07',
+                },
+                {
+                  path: '/layout/layout/08',
+                  component: './Layout/Layout/Index08',
+                },
+                {
+                  path: '/layout/layout/09',
+                  component: './Layout/Layout/Index09',
+                },
+              ]
+            },
+          ]
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
           component: './404',
         },
       ],

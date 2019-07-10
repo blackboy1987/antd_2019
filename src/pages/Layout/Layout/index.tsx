@@ -22,7 +22,7 @@ class Index extends Component {
   }
 
   callback=(key:string) => {
-    router.push(`/general/typography/${key}`);
+    router.push(`/layout/layout/${key}`);
     this.setState({
       activeKey: key,
     });
@@ -35,11 +35,15 @@ class Index extends Component {
       <PageHeaderWrapper>
         <Card bordered={false}>
           <Tabs onChange={this.callback} activeKey={activeKey}>
-            <TabPane tab="基本" key="01" />
-            <TabPane tab="标题组件" key="02" />
-            <TabPane tab="文本组件" key="03" />
-            <TabPane tab="可交互" key="04" />
-            <TabPane tab="省略号" key="05" />
+            <TabPane tab="基本结构" key="01" />
+            <TabPane tab="上中下布局" key="02" />
+            <TabPane tab="顶部-侧边布局-通栏" key="03" />
+            <TabPane tab="顶部-侧边布局" key="04" />
+            <TabPane tab="侧边布局" key="05" />
+            <TabPane tab="自定义触发器" key="06" />
+            <TabPane tab="响应式布局" key="07" />
+            <TabPane tab="固定头部" key="08" />
+            <TabPane tab="固定侧边栏" key="09" />
           </Tabs>
           {children}
         </Card>
