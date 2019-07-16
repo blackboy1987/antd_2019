@@ -324,7 +324,121 @@ export default {
           ]
         },
 
-
+        {
+          path: 'navigation',
+          name: 'navigation',
+          icon: 'navigation',
+          routes:[
+            {
+              path: '/navigation/affix',
+              name: 'affix',
+              icon: 'affix',
+              component: './Navigation/Affix',
+              routes:[
+                {
+                  path: '/navigation/affix',
+                  redirect: '/navigation/affix/01',
+                },
+                {
+                  path: '/navigation/affix/01',
+                  component: './Navigation/Affix/Index01',
+                },
+                {
+                  path: '/navigation/affix/02',
+                  component: './Navigation/Affix/Index02',
+                },
+                {
+                  path: '/navigation/affix/03',
+                  component: './Navigation/Affix/Index03',
+                },
+              ]
+            },
+            {
+              path: '/navigation/breadcrumb',
+              name: 'breadcrumb',
+              icon: 'breadcrumb',
+              component: './Navigation/Breadcrumb',
+              routes:[
+                {
+                  path: '/navigation/breadcrumb',
+                  redirect: '/navigation/breadcrumb/01',
+                },
+                {
+                  path: '/navigation/breadcrumb/01',
+                  component: './Navigation/Breadcrumb/Index01',
+                },
+                {
+                  path: '/navigation/breadcrumb/02',
+                  component: './Navigation/Breadcrumb/Index02',
+                },
+                {
+                  path: '/navigation/breadcrumb/03',
+                  component: './Navigation/Breadcrumb/Index03',
+                },
+                {
+                  path: '/navigation/breadcrumb/04',
+                  component: './Navigation/Breadcrumb/Index04',
+                },
+                {
+                  path: '/navigation/breadcrumb/05',
+                  component: './Navigation/Breadcrumb/Index05',
+                },
+                {
+                  path: '/navigation/breadcrumb/06',
+                  component: './Navigation/Breadcrumb/Index06',
+                },
+              ]
+            },
+            {
+              path: '/navigation/dropdown',
+              name: 'dropdown',
+              icon: 'dropdown',
+              component: './Navigation/Dropdown',
+              routes:[
+                {
+                  path: '/navigation/dropdown',
+                  redirect: '/navigation/dropdown/01',
+                },
+                {
+                  path: '/navigation/dropdown/01',
+                  component: './Navigation/Dropdown/Index01',
+                },
+                {
+                  path: '/navigation/dropdown/02',
+                  component: './Navigation/Dropdown/Index02',
+                },
+                {
+                  path: '/navigation/dropdown/03',
+                  component: './Navigation/Dropdown/Index03',
+                },
+                {
+                  path: '/navigation/dropdown/04',
+                  component: './Navigation/Dropdown/Index04',
+                },
+                {
+                  path: '/navigation/dropdown/05',
+                  component: './Navigation/Dropdown/Index05',
+                },
+                {
+                  path: '/navigation/dropdown/06',
+                  component: './Navigation/Dropdown/Index06',
+                },
+                {
+                  path: '/navigation/dropdown/07',
+                  component: './Navigation/Dropdown/Index07',
+                },
+                {
+                  path: '/navigation/dropdown/08',
+                  component: './Navigation/Dropdown/Index08',
+                },
+                {
+                  path: '/navigation/dropdown/09',
+                  component: './Navigation/Dropdown/Index09',
+                },
+              ]
+            },
+          ]
+        },
 
 
 
