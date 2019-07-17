@@ -437,6 +437,46 @@ export default {
                 },
               ]
             },
+            {
+              path: '/navigation/menu',
+              name: 'menu',
+              icon: 'menu',
+              component: './Navigation/Menu',
+              routes:[
+                {
+                  path: '/navigation/menu',
+                  redirect: '/navigation/menu/01',
+                },
+                {
+                  path: '/navigation/menu/01',
+                  component: './Navigation/Menu/Index01',
+                },
+                {
+                  path: '/navigation/menu/02',
+                  component: './Navigation/Menu/Index02',
+                },
+                {
+                  path: '/navigation/menu/03',
+                  component: './Navigation/Menu/Index03',
+                },
+                {
+                  path: '/navigation/menu/04',
+                  component: './Navigation/Menu/Index04',
+                },
+                {
+                  path: '/navigation/menu/05',
+                  component: './Navigation/Menu/Index05',
+                },
+                {
+                  path: '/navigation/menu/06',
+                  component: './Navigation/Menu/Index06',
+                },
+                {
+                  path: '/navigation/menu/07',
+                  component: './Navigation/Menu/Index07',
+                },
+              ]
+            },
           ]
         },
 
