@@ -477,9 +477,180 @@ export default {
                 },
               ]
             },
+            {
+              path: '/navigation/pagination',
+              name: 'pagination',
+              icon: 'pagination',
+              component: './Navigation/Pagination',
+              routes:[
+                {
+                  path: '/navigation/pagination',
+                  redirect: '/navigation/pagination/01',
+                },
+                {
+                  path: '/navigation/pagination/01',
+                  component: './Navigation/Pagination/Index01',
+                },
+                {
+                  path: '/navigation/pagination/02',
+                  component: './Navigation/Pagination/Index02',
+                },
+                {
+                  path: '/navigation/pagination/03',
+                  component: './Navigation/Pagination/Index03',
+                },
+                {
+                  path: '/navigation/pagination/04',
+                  component: './Navigation/Pagination/Index04',
+                },
+                {
+                  path: '/navigation/pagination/05',
+                  component: './Navigation/Pagination/Index05',
+                },
+                {
+                  path: '/navigation/pagination/06',
+                  component: './Navigation/Pagination/Index06',
+                },
+                {
+                  path: '/navigation/pagination/07',
+                  component: './Navigation/Pagination/Index07',
+                },
+                {
+                  path: '/navigation/pagination/08',
+                  component: './Navigation/Pagination/Index08',
+                },
+                {
+                  path: '/navigation/pagination/09',
+                  component: './Navigation/Pagination/Index09',
+                },
+              ]
+            },
+            {
+              path: '/navigation/pageHeader',
+              name: 'pageHeader',
+              icon: 'pageHeader',
+              component: './Navigation/PageHeader',
+              routes:[
+                {
+                  path: '/navigation/pageHeader',
+                  redirect: '/navigation/pageHeader/01',
+                },
+                {
+                  path: '/navigation/pageHeader/01',
+                  component: './Navigation/PageHeader/Index01',
+                },
+                {
+                  path: '/navigation/pageHeader/02',
+                  component: './Navigation/PageHeader/Index02',
+                },
+                {
+                  path: '/navigation/pageHeader/03',
+                  component: './Navigation/PageHeader/Index03',
+                },
+                {
+                  path: '/navigation/pageHeader/04',
+                  component: './Navigation/PageHeader/Index04',
+                },
+              ]
+            },
+            {
+              path: '/navigation/steps',
+              name: 'steps',
+              icon: 'steps',
+              component: './Navigation/Steps',
+              routes:[
+                {
+                  path: '/navigation/steps',
+                  redirect: '/navigation/steps/01',
+                },
+                {
+                  path: '/navigation/steps/01',
+                  component: './Navigation/Steps/Index01',
+                },
+                {
+                  path: '/navigation/steps/02',
+                  component: './Navigation/Steps/Index02',
+                },
+                {
+                  path: '/navigation/steps/03',
+                  component: './Navigation/Steps/Index03',
+                },
+                {
+                  path: '/navigation/steps/04',
+                  component: './Navigation/Steps/Index04',
+                },
+                {
+                  path: '/navigation/steps/05',
+                  component: './Navigation/Steps/Index05',
+                },
+                {
+                  path: '/navigation/steps/06',
+                  component: './Navigation/Steps/Index06',
+                },
+                {
+                  path: '/navigation/steps/07',
+                  component: './Navigation/Steps/Index07',
+                },
+                {
+                  path: '/navigation/steps/08',
+                  component: './Navigation/Steps/Index08',
+                },
+                {
+                  path: '/navigation/steps/09',
+                  component: './Navigation/Steps/Index09',
+                },
+                {
+                  path: '/navigation/steps/10',
+                  component: './Navigation/Steps/Index10',
+                },
+              ]
+            },
           ]
         },
 
+        {
+          path: 'dataInput',
+          name: 'dataInput',
+          icon: 'dataInput',
+          routes:[
+            {
+              path: '/dataInput/autoComplete',
+              name: 'autoComplete',
+              icon: 'autoComplete',
+              component: './DataInput/AutoComplete',
+              routes:[
+                {
+                  path: '/dataInput/autoComplete',
+                  redirect: '/dataInput/autoComplete/01',
+                },
+                {
+                  path: '/dataInput/autoComplete/01',
+                  component: './DataInput/AutoComplete/Index01',
+                },
+                {
+                  path: '/dataInput/autoComplete/02',
+                  component: './DataInput/AutoComplete/Index02',
+                },
+                {
+                  path: '/dataInput/autoComplete/03',
+                  component: './DataInput/AutoComplete/Index03',
+                },
+                {
+                  path: '/dataInput/autoComplete/04',
+                  component: './DataInput/AutoComplete/Index04',
+                },
+                {
+                  path: '/dataInput/autoComplete/05',
+                  component: './DataInput/AutoComplete/Index05',
+                },
+                {
+                  path: '/dataInput/autoComplete/06',
+                  component: './DataInput/AutoComplete/Index06',
+                },
+              ]
+            },
+          ]
+        },
 
 
 
