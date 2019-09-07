@@ -894,6 +894,12 @@ export default {
               name: 'radio',
               icon: 'radio',
               component: './DataInput/Radio'
+            },
+            {
+              path: '/dataInput/switch',
+              name: 'switch',
+              icon: 'switch',
+              component: './DataInput/Switch'
             }
           ]
         },
