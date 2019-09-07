@@ -882,6 +882,12 @@ export default {
               name: 'mentions',
               icon: 'mentions',
               component: './DataInput/Mentions'
+            },
+            {
+              path: '/dataInput/rate',
+              name: 'rate',
+              icon: 'rate',
+              component: './DataInput/Rate'
             }
           ]
         },
