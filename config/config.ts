@@ -888,6 +888,12 @@ export default {
               name: 'rate',
               icon: 'rate',
               component: './DataInput/Rate'
+            },
+            {
+              path: '/dataInput/radio',
+              name: 'radio',
+              icon: 'radio',
+              component: './DataInput/Radio'
             }
           ]
         },
