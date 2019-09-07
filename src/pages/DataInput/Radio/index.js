@@ -4,6 +4,7 @@ import { PageHeaderWrapper } from '@ant-design/pro-layout';
 
 class Index extends PureComponent {
     onChange= e => {
+        // eslint-disable-next-line no-console
         console.log(e.target.value);
     };
 
