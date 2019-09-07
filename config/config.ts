@@ -38,11 +38,11 @@ const plugins: IPlugin[] = [
       },
       pwa: pwa
         ? {
-            workboxPluginMode: 'InjectManifest',
-            workboxOptions: {
-              importWorkboxFrom: 'local',
-            },
-          }
+          workboxPluginMode: 'InjectManifest',
+          workboxOptions: {
+            importWorkboxFrom: 'local',
+          },
+        }
         : false,
       // default close dll, because issue https://github.com/ant-design/ant-design-pro/issues/4665
       // dll features https://webpack.js.org/plugins/dll-plugin/
@@ -107,13 +107,13 @@ export default {
           path: 'general',
           name: 'general',
           icon: 'general',
-          routes:[
+          routes: [
             {
               path: '/general/button',
               name: 'button',
               icon: 'button',
               component: './General/Button',
-              routes:[
+              routes: [
                 {
                   path: '/general/button',
                   redirect: '/general/button/01',
@@ -161,7 +161,7 @@ export default {
               name: 'icon',
               icon: 'icon',
               component: './General/Icon',
-              routes:[
+              routes: [
                 {
                   path: '/general/icon',
                   redirect: '/general/icon/01',
@@ -189,7 +189,7 @@ export default {
               name: 'typography',
               icon: 'typography',
               component: './General/Typography',
-              routes:[
+              routes: [
                 {
                   path: '/general/typography',
                   redirect: '/general/typography/01',
@@ -222,13 +222,13 @@ export default {
           path: 'layout',
           name: 'layout',
           icon: 'layout',
-          routes:[
+          routes: [
             {
               path: '/layout/grid',
               name: 'grid',
               icon: 'grid',
               component: './Layout/Grid',
-              routes:[
+              routes: [
                 {
                   path: '/layout/grid',
                   redirect: '/layout/grid/01',
@@ -280,7 +280,7 @@ export default {
               name: 'layout',
               icon: 'layout',
               component: './Layout/Layout',
-              routes:[
+              routes: [
                 {
                   path: '/layout/layout',
                   redirect: '/layout/layout/01',
@@ -330,13 +330,13 @@ export default {
           path: 'navigation',
           name: 'navigation',
           icon: 'navigation',
-          routes:[
+          routes: [
             {
               path: '/navigation/affix',
               name: 'affix',
               icon: 'affix',
               component: './Navigation/Affix',
-              routes:[
+              routes: [
                 {
                   path: '/navigation/affix',
                   redirect: '/navigation/affix/01',
@@ -360,7 +360,7 @@ export default {
               name: 'breadcrumb',
               icon: 'breadcrumb',
               component: './Navigation/Breadcrumb',
-              routes:[
+              routes: [
                 {
                   path: '/navigation/breadcrumb',
                   redirect: '/navigation/breadcrumb/01',
@@ -396,7 +396,7 @@ export default {
               name: 'dropdown',
               icon: 'dropdown',
               component: './Navigation/Dropdown',
-              routes:[
+              routes: [
                 {
                   path: '/navigation/dropdown',
                   redirect: '/navigation/dropdown/01',
@@ -444,7 +444,7 @@ export default {
               name: 'menu',
               icon: 'menu',
               component: './Navigation/Menu',
-              routes:[
+              routes: [
                 {
                   path: '/navigation/menu',
                   redirect: '/navigation/menu/01',
@@ -484,7 +484,7 @@ export default {
               name: 'pagination',
               icon: 'pagination',
               component: './Navigation/Pagination',
-              routes:[
+              routes: [
                 {
                   path: '/navigation/pagination',
                   redirect: '/navigation/pagination/01',
@@ -532,7 +532,7 @@ export default {
               name: 'pageHeader',
               icon: 'pageHeader',
               component: './Navigation/PageHeader',
-              routes:[
+              routes: [
                 {
                   path: '/navigation/pageHeader',
                   redirect: '/navigation/pageHeader/01',
@@ -560,7 +560,7 @@ export default {
               name: 'steps',
               icon: 'steps',
               component: './Navigation/Steps',
-              routes:[
+              routes: [
                 {
                   path: '/navigation/steps',
                   redirect: '/navigation/steps/01',
@@ -614,13 +614,13 @@ export default {
           path: 'dataInput',
           name: 'dataInput',
           icon: 'dataInput',
-          routes:[
+          routes: [
             {
               path: '/dataInput/autoComplete',
               name: 'autoComplete',
               icon: 'autoComplete',
               component: './DataInput/AutoComplete',
-              routes:[
+              routes: [
                 {
                   path: '/dataInput/autoComplete',
                   redirect: '/dataInput/autoComplete/01',
@@ -656,7 +656,7 @@ export default {
               name: 'checkbox',
               icon: 'checkbox',
               component: './DataInput/CheckBox',
-              routes:[
+              routes: [
                 {
                   path: '/dataInput/checkbox',
                   redirect: '/dataInput/checkbox/01',
@@ -696,7 +696,7 @@ export default {
               name: 'cascader',
               icon: 'cascader',
               component: './DataInput/Cascader',
-              routes:[
+              routes: [
                 {
                   path: '/dataInput/cascader',
                   redirect: '/dataInput/cascader/01',
@@ -752,7 +752,7 @@ export default {
               name: 'datePicker',
               icon: 'datePicker',
               component: './DataInput/DatePicker',
-              routes:[
+              routes: [
                 {
                   path: '/dataInput/datePicker',
                   redirect: '/dataInput/datePicker/01',
@@ -808,7 +808,7 @@ export default {
               name: 'form',
               icon: 'form',
               component: './DataInput/Form',
-              routes:[
+              routes: [
                 {
                   path: '/dataInput/form',
                   redirect: '/dataInput/form/01',
@@ -876,7 +876,13 @@ export default {
               ]
             },
             InputNumber,
-            Input
+            Input,
+            {
+              path: '/dataInput/mentions',
+              name: 'mentions',
+              icon: 'mentions',
+              component: './DataInput/Mentions'
+            }
           ]
         },
 
