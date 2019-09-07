@@ -1,9 +1,11 @@
 import {
   Typography,
+  AutoComplete,
 } from 'antd';
 
 import React, { Component } from 'react';
 
+const dataSource = ['Burns Bay Road', 'Downing Street', 'Wall Street'];
 
 const { Paragraph } = Typography;
 
@@ -17,6 +19,14 @@ class Index extends Component {
             不区分大小写的 AutoComplete
           </Paragraph>
         </Typography>
+        <AutoComplete
+          style={{ width: 200 }}
+          dataSource={dataSource}
+          placeholder="try to type `b`"
+          filterOption={(inputValue, option) =>
+            option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
+          }
+        />
       </div>
     );
   }

@@ -44,6 +44,22 @@ class Index extends Component {
             <TabPane tab="" key="07" />
             <TabPane tab="" key="08" />
             <TabPane tab="" key="09" />
+            <TabPane tab="" key="10" />
+            <TabPane tab="" key="11" />
+            <TabPane tab="" key="12" />
+            <TabPane tab="" key="13" />
+            <TabPane tab="" key="14" />
+            <TabPane tab="" key="15" />
+            <TabPane tab="" key="16" />
+            <TabPane tab="" key="17" />
+            <TabPane tab="" key="18" />
+            <TabPane tab="" key="19" />
+            <TabPane tab="" key="20" />
+            <TabPane tab="" key="21" />
+            <TabPane tab="" key="22" />
+            <TabPane tab="" key="23" />
+            <TabPane tab="" key="24" />
+            <TabPane tab="" key="25" />
           </Tabs>
           {children}
         </Card>

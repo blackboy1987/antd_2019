@@ -4,6 +4,8 @@ import defaultSettings from './defaultSettings';
 // https://umijs.org/config/
 import slash from 'slash2';
 import webpackPlugin from './plugin.config';
+import InputNumber from "./routers/InputNumber";
+import Input from "./routers/Input";
 
 const { pwa, primaryColor } = defaultSettings;
 
@@ -649,6 +651,232 @@ export default {
                 },
               ]
             },
+            {
+              path: '/dataInput/checkbox',
+              name: 'checkbox',
+              icon: 'checkbox',
+              component: './DataInput/CheckBox',
+              routes:[
+                {
+                  path: '/dataInput/checkbox',
+                  redirect: '/dataInput/checkbox/01',
+                },
+                {
+                  path: '/dataInput/checkbox/01',
+                  component: './DataInput/CheckBox/Index01',
+                },
+                {
+                  path: '/dataInput/checkbox/02',
+                  component: './DataInput/CheckBox/Index02',
+                },
+                {
+                  path: '/dataInput/checkbox/03',
+                  component: './DataInput/CheckBox/Index03',
+                },
+                {
+                  path: '/dataInput/checkbox/04',
+                  component: './DataInput/CheckBox/Index04',
+                },
+                {
+                  path: '/dataInput/checkbox/05',
+                  component: './DataInput/CheckBox/Index05',
+                },
+                {
+                  path: '/dataInput/checkbox/06',
+                  component: './DataInput/CheckBox/Index06',
+                },
+                {
+                  path: '/dataInput/checkbox/07',
+                  component: './DataInput/CheckBox/Index07',
+                },
+              ]
+            },
+            {
+              path: '/dataInput/cascader',
+              name: 'cascader',
+              icon: 'cascader',
+              component: './DataInput/Cascader',
+              routes:[
+                {
+                  path: '/dataInput/cascader',
+                  redirect: '/dataInput/cascader/01',
+                },
+                {
+                  path: '/dataInput/cascader/01',
+                  component: './DataInput/Cascader/Index01',
+                },
+                {
+                  path: '/dataInput/cascader/02',
+                  component: './DataInput/Cascader/Index02',
+                },
+                {
+                  path: '/dataInput/cascader/03',
+                  component: './DataInput/Cascader/Index03',
+                },
+                {
+                  path: '/dataInput/cascader/04',
+                  component: './DataInput/Cascader/Index04',
+                },
+                {
+                  path: '/dataInput/cascader/05',
+                  component: './DataInput/Cascader/Index05',
+                },
+                {
+                  path: '/dataInput/cascader/06',
+                  component: './DataInput/Cascader/Index06',
+                },
+                {
+                  path: '/dataInput/cascader/07',
+                  component: './DataInput/Cascader/Index07',
+                },
+                {
+                  path: '/dataInput/cascader/08',
+                  component: './DataInput/Cascader/Index08',
+                },
+                {
+                  path: '/dataInput/cascader/09',
+                  component: './DataInput/Cascader/Index09',
+                },
+                {
+                  path: '/dataInput/cascader/10',
+                  component: './DataInput/Cascader/Index10',
+                },
+                {
+                  path: '/dataInput/cascader/11',
+                  component: './DataInput/Cascader/Index11',
+                },
+              ]
+            },
+            {
+              path: '/dataInput/datePicker',
+              name: 'datePicker',
+              icon: 'datePicker',
+              component: './DataInput/DatePicker',
+              routes:[
+                {
+                  path: '/dataInput/datePicker',
+                  redirect: '/dataInput/datePicker/01',
+                },
+                {
+                  path: '/dataInput/datePicker/01',
+                  component: './DataInput/DatePicker/Index01',
+                },
+                {
+                  path: '/dataInput/datePicker/02',
+                  component: './DataInput/DatePicker/Index02',
+                },
+                {
+                  path: '/dataInput/datePicker/03',
+                  component: './DataInput/DatePicker/Index03',
+                },
+                {
+                  path: '/dataInput/datePicker/04',
+                  component: './DataInput/DatePicker/Index04',
+                },
+                {
+                  path: '/dataInput/datePicker/05',
+                  component: './DataInput/DatePicker/Index05',
+                },
+                {
+                  path: '/dataInput/datePicker/06',
+                  component: './DataInput/DatePicker/Index06',
+                },
+                {
+                  path: '/dataInput/datePicker/07',
+                  component: './DataInput/DatePicker/Index07',
+                },
+                {
+                  path: '/dataInput/datePicker/08',
+                  component: './DataInput/DatePicker/Index08',
+                },
+                {
+                  path: '/dataInput/datePicker/09',
+                  component: './DataInput/DatePicker/Index09',
+                },
+                {
+                  path: '/dataInput/datePicker/10',
+                  component: './DataInput/DatePicker/Index10',
+                },
+                {
+                  path: '/dataInput/datePicker/11',
+                  component: './DataInput/DatePicker/Index11',
+                },
+              ]
+            },
+            {
+              path: '/dataInput/form',
+              name: 'form',
+              icon: 'form',
+              component: './DataInput/Form',
+              routes:[
+                {
+                  path: '/dataInput/form',
+                  redirect: '/dataInput/form/01',
+                },
+                {
+                  path: '/dataInput/form/01',
+                  component: './DataInput/Form/Index01',
+                },
+                {
+                  path: '/dataInput/form/02',
+                  component: './DataInput/Form/Index02',
+                },
+                {
+                  path: '/dataInput/form/03',
+                  component: './DataInput/Form/Index03',
+                },
+                {
+                  path: '/dataInput/form/04',
+                  component: './DataInput/Form/Index04',
+                },
+                {
+                  path: '/dataInput/form/05',
+                  component: './DataInput/Form/Index05',
+                },
+                {
+                  path: '/dataInput/form/06',
+                  component: './DataInput/Form/Index06',
+                },
+                {
+                  path: '/dataInput/form/07',
+                  component: './DataInput/Form/Index07',
+                },
+                {
+                  path: '/dataInput/form/08',
+                  component: './DataInput/Form/Index08',
+                },
+                {
+                  path: '/dataInput/form/09',
+                  component: './DataInput/Form/Index09',
+                },
+                {
+                  path: '/dataInput/form/10',
+                  component: './DataInput/Form/Index10',
+                },
+                {
+                  path: '/dataInput/form/11',
+                  component: './DataInput/Form/Index11',
+                },
+                {
+                  path: '/dataInput/form/12',
+                  component: './DataInput/Form/Index12',
+                },
+                {
+                  path: '/dataInput/form/13',
+                  component: './DataInput/Form/Index13',
+                },
+                {
+                  path: '/dataInput/form/14',
+                  component: './DataInput/Form/Index14',
+                },
+                {
+                  path: '/dataInput/form/15',
+                  component: './DataInput/Form/Index15',
+                },
+              ]
+            },
+            InputNumber,
+            Input
           ]
         },
 
