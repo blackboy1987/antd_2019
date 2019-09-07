@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Switch, Card,Modal, } from 'antd';
+import { Switch, Card, Modal } from 'antd';
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
 
 class Index extends PureComponent {
