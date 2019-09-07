@@ -5,44 +5,43 @@ import { PageHeaderWrapper } from '@ant-design/pro-layout';
 import './index.less';
 
 class Index extends PureComponent {
-
     state = {
-        text:''
+        text: '',
     };
 
-    onHoverChange=(value)=>{
-        if(value<=1){
+    onHoverChange=value => {
+        if (value <= 1) {
             this.setState({
-                text:"勉强",
+                text: '勉强',
             });
-        } else if (value <= 2){
+        } else if (value <= 2) {
             this.setState({
-                text: "及格",
+                text: '及格',
             });
         } else {
             this.setState({
-                text: "优秀",
+                text: '优秀',
             });
         }
     }
 
-    render(){
-        const {text} = this.state;
+    render() {
+        const { text } = this.state;
         return (
             <PageHeaderWrapper>
                 <Card bordered={false}>
-                    <Rate 
+                    <Rate
                         count={3}
                         allowHalf
                         defaultValue={2.5}
                         allowClear={false}
-                        character={<Icon type='setting' />}
+                        character={<Icon type="setting" />}
                         onHoverChange={this.onHoverChange}
                      />
                      {text}
                 </Card>
             </PageHeaderWrapper>
-        )
+        );
     }
 }
 
