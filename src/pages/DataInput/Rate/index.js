@@ -9,7 +9,7 @@ class Index extends PureComponent {
         text: '',
     };
 
-    onHoverChange=value => {
+    onHoverChange = value => {
         if (value <= 1) {
             this.setState({
                 text: '勉强',
@@ -37,8 +37,8 @@ class Index extends PureComponent {
                         allowClear={false}
                         character={<Icon type="setting" />}
                         onHoverChange={this.onHoverChange}
-                     />
-                     {text}
+                    />
+                    {text}
                 </Card>
             </PageHeaderWrapper>
         );

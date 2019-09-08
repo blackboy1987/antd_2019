@@ -900,6 +900,18 @@ export default {
               name: 'switch',
               icon: 'switch',
               component: './DataInput/Switch'
+            },
+            {
+              path: '/dataInput/slider',
+              name: 'slider',
+              icon: 'slider',
+              component: './DataInput/Slider'
+            },
+            {
+              path: '/dataInput/select',
+              name: 'select',
+              icon: 'select',
+              component: './DataInput/Select'
             }
           ]
         },
