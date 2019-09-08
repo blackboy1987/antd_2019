@@ -912,6 +912,12 @@ export default {
               name: 'select',
               icon: 'select',
               component: './DataInput/Select'
+            },
+            {
+              path: '/dataInput/treeSelect',
+              name: 'treeSelect',
+              icon: 'treeSelect',
+              component: './DataInput/TreeSelect'
             }
           ]
         },
